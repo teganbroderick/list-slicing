@@ -187,9 +187,10 @@ def replace_middle(input_list):
     True
 
     """
-    input_list[2:-2]
 
-    pass
+    input_list[2:-2] = [42, 37]
+
+
 
 
 def delete_third_and_seventh(input_list):
@@ -198,13 +199,20 @@ def delete_third_and_seventh(input_list):
     For example:
 
     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+        notes = ['Do', 'Re', 'Fa', 'So', 'La', 'Ti', 'Do']
+
     >>> delete_third_and_seventh(notes)
     >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
     True
 
     """
+    del input_list[6]
+    print(input_list)
+    del input_list[2]
 
-    pass
+    #del input_list[2]
+    #del input_list[5]
+    print(input_list)
 
 
 def delete_middle(input_list):
@@ -220,8 +228,7 @@ def delete_middle(input_list):
     True
 
     """
-
-    pass
+    del input_list[2:-2]
 
 
 ##############################################################################
