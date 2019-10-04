@@ -30,8 +30,11 @@ def custom_len(input_list):
         8
 
     """
+    count = 0
+    for item in input_list:
+        count += 1
 
-    return 0
+    return count
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -58,8 +61,27 @@ def custom_append(input_list, value):
         True
 
     """
+    list_length = custom_len(input_list)
+    input_list[list_length: list_length+1] = [value]
+    #print("INPUT LIST ", input_list)
+    
+    # list_length = 0
+    # for item in input_list:
+    #     list_length += 1
 
-    pass
+    # new_list = [None] * (list_length+1)
+    # #print("NEW LIST: ",new_list)
+    # for number in range(list_length+1):
+    #     if number != list_length:
+    #         new_list[number] = input_list[number]
+    #     else:
+    #         new_list[number] = value
+
+    # input_list = new_list
+    # print("NEW LIST ALTERED: ",new_list)
+    # print("INPUT LIST  ALTERED: ",input_list)
+
+
 
 
 def custom_extend(input_list, second_list):
