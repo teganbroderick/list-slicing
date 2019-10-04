@@ -209,8 +209,8 @@ def delete_third_and_seventh(input_list):
     # del input_list[6]
     # del input_list[2]
 
-    del input_list[2]
-    del input_list[5]
+    input_list[2:3] = []
+    input_list[5:6] = []
 
 
 def delete_middle(input_list):
@@ -226,7 +226,7 @@ def delete_middle(input_list):
     True
 
     """
-    del input_list[2:-2]
+    input_list[2:-2] = []
 
 
 ##############################################################################
